@@ -112,6 +112,28 @@ body {
 .currLocation:hover{
 	color: orange;
 }
+.resultbody{
+	background-image: url('img/backpic.jpg');
+	color :white;
+	margin-top:50px;
+}
+.result_main{
+	margin: auto;
+	width:50%;
+	box-shadow: 2px 2px lightgray;
+	text-align:center;
+	padding: 20px;
+	display: inline;
+}
+.result_main h1{
+	font-size: 70px;
+}
+.result_main h2{
+	font-size: 50px;
+}
+.result_main h3{
+	font-size: 40px;
+}
 
 /* ZIP & feelings input */
 

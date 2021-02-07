@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Weather Forecast</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="resultbody" >
+<div class="result_main">
+	<h2><p th:text="${session.mylocation}"></p></h2><br><br>
+	<h1><span th:text="${session.mycurrtemp}"></span>&#176 C</h1><br>
+	<h2><span th:text="${session.mymintemp}"></span>&#176 C &nbsp;&nbsp;&nbsp;&nbsp;               
+	<span th:text="${session.mymaxtemp}"></span>&#176 C</h2><br>
+	<h3><p th:text="${session.mydayphrase}"></p></h3><br>
+</div>
+</body>
+</html>

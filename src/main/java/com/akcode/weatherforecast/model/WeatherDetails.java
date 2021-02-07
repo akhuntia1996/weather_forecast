@@ -9,13 +9,24 @@ public class WeatherDetails {
 	
 	Date curDate;
 	
-	int maxTemp, minTemp;
+	double maxTemp, minTemp;
+	double currTemp;
 	String dayPhrase, nightPhrase;
 	
+	public double getCurrTemp() {
+		return currTemp;
+	}
+
+
+	public void setCurrTemp(double d) {
+		this.currTemp = d;
+	}
+
+
 	@Override
 	public String toString() {
-		return "WeatherDetails [curDate=" + curDate + ", maxTemp=" + maxTemp + ", minTemp=" + minTemp + ", dayPhrase="
-				+ dayPhrase + ", nightPhrase=" + nightPhrase + "]";
+		return "WeatherDetails [curDate=" + curDate + ", maxTemp=" + maxTemp + ", minTemp=" + minTemp + ", currTemp="
+				+ currTemp + ", dayPhrase=" + dayPhrase + ", nightPhrase=" + nightPhrase + "]";
 	}
 	
 	
@@ -25,16 +36,16 @@ public class WeatherDetails {
 	public void setCurDate(Date curDate) {
 		this.curDate = curDate;
 	}
-	public int getMaxTemp() {
+	public double getMaxTemp() {
 		return maxTemp;
 	}
-	public void setMaxTemp(int maxTemp) {
+	public void setMaxTemp(double maxTemp) {
 		this.maxTemp = maxTemp;
 	}
-	public int getMinTemp() {
+	public double getMinTemp() {
 		return minTemp;
 	}
-	public void setMinTemp(int minTemp) {
+	public void setMinTemp(double minTemp) {
 		this.minTemp = minTemp;
 	}
 	public String getDayPhrase() {
